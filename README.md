@@ -97,6 +97,10 @@ Medical_assistant/
 ```
 ## Output
 <img width="1600" height="700" alt="image" src="https://github.com/user-attachments/assets/c3a3403e-75c7-41f9-aaf3-afdf316d3361" />
+<img width="1600" height="700" alt="image" src="https://github.com/user-attachments/assets/22d9f9c2-9dfa-4d7f-9597-58263d6bc3d8" />
+<img width="1600" height="700" alt="image" src="https://github.com/user-attachments/assets/4b22ee63-6d7a-4eb8-b625-4e09bc4ce941" />
+
+
 
 
 
