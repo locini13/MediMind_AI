@@ -95,6 +95,10 @@ Medical_assistant/
 ├── .env                   # API keys
 └── requirements.txt       # Dependencies
 ```
+## Output
+<img width="1600" height="896" alt="image" src="https://github.com/user-attachments/assets/c3a3403e-75c7-41f9-aaf3-afdf316d3361" />
+
+
 
 ## Disclaimer
 
