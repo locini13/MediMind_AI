@@ -1,0 +1,213 @@
+/* ═══════════════════════════════════════════════════════════
+   MediMind AI — Animations & Transitions
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Keyframes ── */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
+@keyframes typingBounce {
+    0%, 80%, 100% {
+        transform: scale(0.6);
+        opacity: 0.4;
+    }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes voicePulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ── Loading Skeleton ── */
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--bg-tertiary) 25%,
+        var(--bg-hover) 50%,
+        var(--bg-tertiary) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+    border-radius: var(--radius-sm);
+}
+
+.skeleton-line {
+    height: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.skeleton-line:last-child {
+    width: 60%;
+}
+
+/* ── Loading Spinner ── */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-primary);
+    border-top-color: var(--accent-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* ── Transition Utilities ── */
+.fade-enter {
+    animation: fadeIn var(--transition-base) ease-out;
+}
+
+.slide-up-enter {
+    animation: fadeInUp var(--transition-base) ease-out;
+}
+
+.scale-enter {
+    animation: scaleIn var(--transition-base) ease-out;
+}
+
+/* ── Toast Exit ── */
+.toast.exit {
+    animation: slideOutRight 0.3s ease-in forwards;
+}
+
+/* ── Sidebar Overlay (mobile) ── */
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    animation: fadeIn 0.3s ease;
+    display: none;
+}
+
+.sidebar-overlay.show {
+    display: block;
+}
+
+/* ── Button Press Effect ── */
+.press-effect:active {
+    transform: scale(0.95);
+}
+
+/* ── Glow Effect ── */
+.glow-effect {
+    position: relative;
+}
+
+.glow-effect::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: var(--gradient-primary);
+    opacity: 0;
+    z-index: -1;
+    filter: blur(12px);
+    transition: opacity var(--transition-base);
+}
+
+.glow-effect:hover::after {
+    opacity: 0.3;
+}
+
+/* ── Smooth Theme Transition ── */
+body, .sidebar, .main-content, .top-bar,
+.message-bubble, .input-wrapper, .quick-action-btn,
+.session-item, .theme-toggle, .icon-btn {
+    transition:
+        background-color var(--transition-base),
+        border-color var(--transition-base),
+        color var(--transition-base),
+        box-shadow var(--transition-base);
+}

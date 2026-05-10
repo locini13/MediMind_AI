@@ -1,0 +1,29 @@
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Environment Variables (IMPORTANT: Never commit .env)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Databases & User Data
+chroma_db/
+data/
+uploads/
+medical_docs/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
