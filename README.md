@@ -2,7 +2,7 @@
 
 An AI-powered full-stack medical assistant with multi-modal interaction through text, medical images, voice input, PDF-based knowledge retrieval, and real-time medical information access.
 
-## ✨ Features
+## Features
 
 - **Conversational AI** — Multi-turn medical conversations powered by Gemini 2.5
 - **RAG Pipeline** — Retrieval-Augmented Generation from medical PDF documents using ChromaDB
@@ -23,7 +23,7 @@ An AI-powered full-stack medical assistant with multi-modal interaction through 
 | **Embeddings** | all-MiniLM-L6-v2 (local, free) |
 | **Vector DB** | ChromaDB |
 | **Routing** | LangGraph |
-| **Image AI** | BiomedCLIP (Microsoft) |
+| **Image AI** | LLaVA model |
 | **Voice** | ElevenLabs |
 | **Web Search** | Tavily |
 | **Database** | SQLite |
