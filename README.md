@@ -1,19 +1,19 @@
-# 🧠 MediMind AI — Intelligent Medical Assistant
+# MediMind AI — Intelligent Medical Assistant
 
 An AI-powered full-stack medical assistant with multi-modal interaction through text, medical images, voice input, PDF-based knowledge retrieval, and real-time medical information access.
 
 ## ✨ Features
 
-- **💬 Conversational AI** — Multi-turn medical conversations powered by Gemini 2.5
-- **📄 RAG Pipeline** — Retrieval-Augmented Generation from medical PDF documents using ChromaDB
-- **🔬 Medical Image Analysis** — BiomedCLIP-powered analysis of X-rays, MRIs, skin conditions
-- **🎤 Voice Interaction** — Speech-to-text and text-to-speech via ElevenLabs
-- **🌐 Real-Time Web Search** — Latest medical information via Tavily
-- **🌗 Dark/Light Mode** — Premium healthcare-themed responsive UI
-- **💾 Chat History** — SQLite-backed conversation persistence
-- **📥 Chat Export** — Download conversation transcripts
+- **Conversational AI** — Multi-turn medical conversations powered by Gemini 2.5
+- **RAG Pipeline** — Retrieval-Augmented Generation from medical PDF documents using ChromaDB
+- **Medical Image Analysis** — BiomedCLIP-powered analysis of X-rays, MRIs, skin conditions
+- **Voice Interaction** — Speech-to-text and text-to-speech via ElevenLabs
+- **Real-Time Web Search** — Latest medical information via Tavily
+- **Dark/Light Mode** — Premium healthcare-themed responsive UI
+- **Chat History** — SQLite-backed conversation persistence
+- **Chat Export** — Download conversation transcripts
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 |-------|-------------|
@@ -28,7 +28,7 @@ An AI-powered full-stack medical assistant with multi-modal interaction through 
 | **Web Search** | Tavily |
 | **Database** | SQLite |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -67,7 +67,7 @@ uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 
 Navigate to **http://localhost:8000** in your browser.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Medical_assistant/
@@ -96,6 +96,6 @@ Medical_assistant/
 └── requirements.txt       # Dependencies
 ```
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 MediMind AI is for **educational and informational purposes only**. It is **not** a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
